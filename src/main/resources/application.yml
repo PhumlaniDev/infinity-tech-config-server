@@ -6,9 +6,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/PhumlaniDev/infinity-tech-config
-          username: ENC(XD5CgdUB/xrti0Uuu0f1CJrXEBfgqPG/fOCIKnnvb6j4TMujxaMW9BgTNP3Ue4Up)
-          password: ENC(JNbRVhBUUKpeCSBe9z/peP/swYwyjjZbnbHzS6baVzH8RiKk1mK8JBOJglhQXZ8IQQjspveOc7tzAaOVP2+XRyBXFPmhqBV9Ye0Vgs27GW6+7Kh/tf10PEf1qpPd+FFDQ4u4OHYOyo26qZekV0/iqA==)
+          uri: git@github.com:PhumlaniDev/infinity-tech-config.git
+          profile: default
+          label: main
+#          username: ${GIT_USERNAME}
+#          password: ${GIT_PASSWORD}
 #  security:
 #    oauth2:
 #      resourceserver:
