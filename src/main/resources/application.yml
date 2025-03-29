@@ -1,0 +1,38 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PhumlaniDev/infinity-tech-config
+          username: ENC(XD5CgdUB/xrti0Uuu0f1CJrXEBfgqPG/fOCIKnnvb6j4TMujxaMW9BgTNP3Ue4Up)
+          password: ENC(JNbRVhBUUKpeCSBe9z/peP/swYwyjjZbnbHzS6baVzH8RiKk1mK8JBOJglhQXZ8IQQjspveOc7tzAaOVP2+XRyBXFPmhqBV9Ye0Vgs27GW6+7Kh/tf10PEf1qpPd+FFDQ4u4OHYOyo26qZekV0/iqA==)
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: http://keycloak:8080/realms/mac-app
+#  redis:
+#    host: redis
+#    port: 6379
+#    cloud:
+#      gateway:
+#        routes:
+#          - id: auth-service
+#            uri: http://auth-service:9000
+#            predicates:
+#              - Path=/api/auth/**
+#            filters:
+#              - name: RequestRateLimiter
+#                args:
+#                  redis-rate-limiter.replenishRate: 10
+#                  redis-rate-limiter.burstCapacity: 20
+#                  redis-rate-limiter.requestedTokens: 1
+#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
