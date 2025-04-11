@@ -2,24 +2,28 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
   cloud:
     config:
       server:
         git:
           uri: git@github.com:PhumlaniDev/infinity-tech-config.git
-          default-label: main
-          timeout: 5
+          private-key: /root/.ssh/id_rsa
+#          default-label: main
+#          timeout: 5
           clone-on-start: true
-          force-pull: true
-
+#          force-pull: true
+encrypt:
+  key: ${ENCRYPT_KEY}
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health
   endpoint:
     health:
-      show-details: always
+      show-details: "always"
 logging:
   level:
     org.springframework.cloud.config: DEBUG
