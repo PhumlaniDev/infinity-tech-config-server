@@ -8,8 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:PhumlaniDev/infinity-tech-config.git
-          private-key: /root/.ssh/id_rsa
+          uri: https://github.com/PhumlaniDev/infinity-tech-config.git
 #          default-label: main
 #          timeout: 5
           clone-on-start: true
