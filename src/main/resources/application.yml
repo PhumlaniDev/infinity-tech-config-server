@@ -10,9 +10,11 @@ spring:
         git:
           uri: https://github.com/PhumlaniDev/infinity-tech-config.git
           default-label: main
-#          timeout: 5
+          search-paths:
+            - "{application}"
+            - "{application}-{profile}"
           clone-on-start: true
-#          force-pull: true
+      fail-fast: true
 encrypt:
   key: ${ENCRYPT_KEY}
 management:
