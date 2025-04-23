@@ -28,3 +28,5 @@ management:
 logging:
   level:
     org.springframework.cloud.config: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.cloud.config.server.encryption: DEBUG
