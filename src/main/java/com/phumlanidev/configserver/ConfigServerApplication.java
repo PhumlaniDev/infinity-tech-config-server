@@ -1,4 +1,4 @@
-package com.phumlanidev.config_server;
+package com.phumlanidev.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

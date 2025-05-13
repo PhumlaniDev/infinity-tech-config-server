@@ -1,4 +1,4 @@
-package com.phumlanidev.config_server;
+package com.phumlanidev.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
