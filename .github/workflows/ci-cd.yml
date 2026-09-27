@@ -63,11 +63,10 @@ jobs:
         ${{ (needs.unit-tests.result == 'success' && needs.sast.result == 'success' && needs.sca.result == 'success' && needs.dast.result == 'success') && 'success' || 'failure' }}
       title: "🚀 Workflow Run - Combined Status"
       description: |
-        Checkstyle: `${{ needs.checkstyle.result }}`
         Build: `${{ needs.build.result }}`
-        Unit Tests: `${{ needs.unit-tests.result }}`
         SAST: `${{ needs.sast.result }}`
         SCA: `${{ needs.sca.result }}`
+        Docker: `${{ needs.docker.result }}`
         Commit: `${{ github.sha }}`
         [View Commit](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
       color: >-
